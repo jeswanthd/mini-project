@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../CSS/signin.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="../Images/logo1.png" alt="Logo">
+    </div>
+    <div class="container">
+        <div class="formContainer">
+            <div>
+                <h2>Sign in with your Account</h2>
+                <label for="lname" class="a-form-label">
+                    <B>Email or mobile phone number</B>
+                </label>
+                <div class="text-field">
+                    <input type="text" name="emailOrPhone" id="lname" required>
+                </div>
+                <label for="lpwd" class="password">
+                    <B>Password</B>
+                </label>
+                <div class="text-field">
+                    <input id="lpwd" type="password" name="Password" required>
+                    <!-- <p><a href="forgot.html">Forget Password?</a></p> -->
+                </div>
+                <button type="submit" onclick="getdata();">Sign In</button>
+                <center>
+                    <input type="checkbox" id="keepSignedIn" name="keepSignedIn">Keep me Signed In
+                </center>
+                <a class="a" href="CreateAccount.html"><button>Create your  Account</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/login.js"></script>
+</body>
+
+</html>

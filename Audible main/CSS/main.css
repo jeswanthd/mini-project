@@ -1,0 +1,141 @@
+
+
+*{
+    font-stretch: condensed;
+}
+.dropdown{
+    background: transparent;
+    border: transparent;
+    margin-top: 4px;
+
+}
+
+.dropdown:hover{
+    text-decoration: underline;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+  .dropdown-item{
+    padding-bottom: 3px;
+  }
+  .dropdown-item:hover{
+    text-decoration: underline;
+    
+  }
+
+  #search{
+    /* background: transparent url("../Images/search.svg") no-repeat 13px;
+    background-position: right; */
+    padding-right: 200px;
+     border: transparent;
+     /* border-radius: 0%; */
+    
+}
+
+.bg_container{ 
+    background-image: url("../Images/Audible_org1.jpg");
+    background-repeat: no-repeat;
+    background-size:contain ;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+}
+.starttrail{
+    padding: 7px 40px 7px 40px;
+   margin-bottom: 20%;
+    background-color:#ffa000;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+    border: #ffa000;
+}
+
+.listenaudio{
+    /* margin-top: 100px; */
+    color: white;
+    width: 45%;
+    
+}
+
+.jump{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 105px;
+    margin-left: 50px;
+    height: 400px;
+}
+
+.main_img1{
+    font-family: "Audible Sans",Arial,sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.main_img{
+    padding-right: 90px;
+}
+.main_img1_mtr{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 60px;
+}
+
+.main_ticks{
+    gap: 76PX;
+    padding-left: 80px;
+}
+
+.navigate{
+    padding: 20px;
+    justify-content: space-around;
+}
+.navigate1{
+    padding: 20px;
+    
+    justify-content: space-around;
+}
+
+.navigate >div:hover{
+    zoom: 1.01;
+    box-shadow: black 10px 10px 10px;
+    border: black 1px solid;
+    
+}
+
+.navigate > div{
+   display: flex;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    box-shadow: #ffa000 5px 5px 5px;
+    border: 1px solid #ffa000 ;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ffa000;
+    justify-content: center;
+    
+}
+.navigate > div > p{
+    margin-top: 40%;
+}
+
+.navigate > div > p > a{
+    color: #ffa000;
+}
+
+.navigate > div > p > a:hover{
+    color: black;
+    text-decoration: #ffa000 underline;
+}

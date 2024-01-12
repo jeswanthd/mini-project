@@ -1,0 +1,114 @@
+#search{
+  /* background: transparent url("../Images/search.svg") no-repeat 13px;
+  background-position: right; */
+  padding-right: 200px;
+   border: transparent;
+   /* border-radius: 0%; */
+  
+}
+
+.body{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.dropdown{
+  background: transparent;
+  border: transparent;
+  margin-top: 3px;
+}
+
+.dropdown:hover{
+  text-decoration: underline;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  
+}
+
+.dropdown>.dropdown-toggle:active {
+
+    pointer-events: none;
+}
+.dropdown-item{
+  padding-bottom: 3px;
+}
+.dropdown-item:hover{
+  text-decoration: underline;
+  
+}
+
+#literature{
+  color: navy;
+  text-decoration: none;
+}
+#literature:hover{
+  color: rgb(71, 71, 211);
+  text-decoration: underline;
+}
+
+#item{
+  grid-area: my;
+  color: navy;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+#item:hover{
+  color: rgb(51, 51, 161);
+  text-decoration: underline;
+ 
+}
+.grid_container{
+  display: grid;
+  grid:
+  'my my my my'
+  'my my my my'
+  'my my my my';
+  padding: 20px;
+  margin-bottom: 15px;
+  
+  
+}
+
+
+
+
+
+.col > a>img{
+  border-radius: 20px;
+  /* height: 60px;
+  width: 60px; */
+}
+/* .p{
+  margin-top: 500px;
+} */
+.image-name {
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Add some space between the image and the name */
+  font-weight: bold; /* Make the name bold */
+}
+
+.col > a:hover{
+  zoom: 1.02;
+  opacity: 70%;
+  box-shadow: black 5px 5px 5px;
+}
+
+.viewallbtn{
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: black 3px 3px 3px ;
+  text-decoration: none;
+  background-color: white;
+  color: #ffa000;
+  font-weight: bold;
+}
+.viewallbtn:hover{
+  background-color:#ffa000;
+  zoom: 1.03;
+  text-decoration: none;
+  background-color:#ffa000;
+  color: black;
+  font-weight: bold;
+}

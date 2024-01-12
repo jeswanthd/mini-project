@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/fiction.css">
+
+  <style>
+    #signin_main {
+      display: block;
+    }
+
+    #myprofile_main {
+      
+      display: none;
+    }
+  </style>
+  <script>
+    let load = () => {
+      if(localStorage.getItem('logedUser')){
+        document.getElementById("myprofile_main").style.display = "block";
+        document.getElementById("signin_main").style.display = "none";
+        document.getElementById("browse").style.display="block";
+      }
+    };
+    load();
+  </script>
+</head>
+
+<body>
+
+
+  <div class="container d-flex flex-wrap">
+    <ul class="nav me-auto">
+      <img src="../Images/logo1.png" style="height: 72px; width: 160px;" alt="">
+    </ul>
+    <ul class="nav pt-3   ">
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Help </a></li>
+      <li  class="nav-item " id="signin_main"><a href="../HTML/Signin.html" class="nav-link link-body-emphasis px-2">|
+          &ensp;Sign in</a></li>
+      <li id="myprofile_main" class="nav-item"><a href="../HTML/dashboard.html" class="nav-link link-body-emphasis px-2">| &ensp;My
+          profile</a></li>
+
+    </ul>
+  </div>
+  <div class="container d-flex flex-wrap justify-content-start mb-4">
+    <ul class="nav me-auto">
+      <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+      <li class="nav-item">
+        <div style="display: none;" id="browse" class="dropdown ">
+          <a  href="../HTML/fiction.html" class="nav-link link-body-emphasis px-2 active mb-2" aria-current="page">
+            Browse 
+          </a>
+         
+
+          <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <li><b> Books</b>
+              </li>
+            <li><b>Audible Orginals</b>
+              </li>
+            <li><b>Podcasts</b>
+              </a></li>
+          
+
+          </ul>
+
+
+        </div>
+      </li>
+
+
+      <li class="nav-item" id="about" style="display: block;"><a href="../HTML/membership.html" class="nav-link link-body-emphasis px-2">About
+          Membership</a></li>
+          <li class="nav-item" id="mainfav" style="display: none;"><a href="../HTML/favorites.html" class="nav-link link-body-emphasis px-2">favorites
+            </a></li>
+    </ul>
+    
+   
+      <div class="  form" style="border: transparent;">
+        <input type="text"  id="searchInput" oninput="searchBooks()" placeholder="Search for a great book">
+        <div id="bookList" style="background-color: #ccc;">
+      </div>
+  </div>
+</div>
+      
+  <div class="bg_container">
+    <div class="jump">
+      <h1 class="listenaudio" style="font-stretch: condensed;">
+        Listen to audiobooks,<br> podcasts, Audible Originals <br> and more
+      </h1>
+      <button class="starttrail" style="font-stretch: condensed;">Start your 30 day free trail</button>
+    </div>
+  </div>
+
+  <div class="main_img1 mt-3">
+
+
+    <div class="final_main_box d-flex flex-column">
+
+      <h3 style="margin-left: 75px;margin-top: 10px; font-family: 'Audible Sans',Arial,sans-serif;"><strong> What you
+          get </strong><br> Your free, 30-day trial comes with:</h3>
+
+      <div class="main_img1_flex d-flex pt-4 pt-4">
+
+        <div class="d-inline-flex flex-column main_ticks">
+          <!-- <img src="../Images/check2.sv" alt=""> <br> -->
+          <img src="../Images/check2.svg" alt="">
+          <img src="../Images/check2.svg" alt="">
+          <img src="../Images/check2.svg" alt="">
+        </div>
+
+        <div class="main_img1_mtr d-inline-flex flex-column">
+          <h5> 1 credit (2 credits for Amazon Prime members <br> new to Audible), to use on any title of your choice
+            <br>—yours to keep, even if you cancel. </h5>
+          <h5> <strong>The Plus Catalogue—listen</strong> all you want to thousands of audiobooks, podcasts, and Audible
+            Originals. </h5>
+          <h5> No commitment—cancel anytime. <br></h5>
+
+          <button class="starttrail">Start your 30 day free trail <br><span class="badge text-dark"
+              style="margin-top: 14px;margin-right: 19px;padding-right: 10px;">₹199 per month after 30-day trial. Cancel
+              anytime.</span></button>
+          <!-- ₹199 per month after 30-day trial. Cancel anytime. -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div>
+      <img class="main_img" src="../Images/main_img1.jpg" alt="">
+    </div>
+  </div>
+  </div>
+
+  <center style="font-family: 'Audible Sans',Arial,sans-serif ;font-stretch: condensed;">
+    <h2><b>Bring words to life with Audible</b></h2>
+    <h5>Here are some of our top picks to get you started</h5>
+  </center>
+
+
+  <div class="d-flex navigate">
+    <div>
+      <p>  <ins>Books </ins></p> </a>
+    </div>
+    <div>
+      <p><ins>Audible Orginals</ins></p></a>
+    </div>
+    <div>
+      <p> <ins>Podcasts</ins></a></p>
+    </div>
+    
+  </div>
+
+  <center class="mt-4" style="font-family: 'Audible Sans',Arial,sans-serif ;font-stretch: condensed;">
+    <h2><b>Try Audible free</b></h2>
+    <h5>It's easy to get started</h5>
+  </center>
+
+  <!-- 
+  <div class="d-flex navigate1  ">
+   <div> <img src="../Images/main_img4.png" alt="">
+    <figcaption><center><b>Start your free trial </b><br>
+        Sign up for a free 30-day trial. Your first audiobook is <br> free, yours to keep even if you cancel.</figcaption></center></div>
+    <img src="../Images/main_img2.png"  alt="">
+    <img src="../Images/main_img3.png" alt="">
+  </div> -->
+
+  <center> <button class="starttrail">Start your 30 day free trail <br><span class="badge text-dark"
+        style="margin-top: 14px;margin-right: 19px;padding-right: 10px;">₹199 per month after 30-day trial. Cancel
+        anytime.</span></button>
+  </center>
+
+
+
+  <!-- -----------------------------FOOTER-------------------------- -->
+  <div style="background-color: #f1f7fe; padding-left: 60px;padding-right: 60px;  ">
+    <center>
+      <footer class="pt-3">
+        <div class="row d-flex" style="justify-content:space-evenly;">
+         
+
+          <div class="col-6 col-md-2 mb-3 ">
+
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learn more about
+                  Audible</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learn more about
+                  membership</a></li>
+            </ul>
+          </div>
+
+
+
+      </footer>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+        <ul class="list-unstyled d-flex " style="justify-content: space-around;">
+          <p>© Copyright 1997 - 2024 Audible, Inc.</p>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg>| Inc Conditions of Use</a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg>| Privacy Notice</a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg>| Interest-Based Ads </a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg>| Recurring Payment Terms </a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a>| | India (English) </li>
+
+</body>
+</li>
+
+</ul>
+</div>
+</center>
+</div>
+
+<script src="../JS/login.js"></script>
+<script src="../JS/fiction.js"></script>
+<script src="../JS/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body 
+{
+margin: 10px;
+padding: 0;
+background-color:#fff;
+}
+.container {
+    max-width: 320px;
+    margin: 0 auto; 
+    padding:20px;
+    border:1px solid #ddd;
+    }
+.logo {
+display: flex;
+justify-content: center;
+}
+
+.text-field >
+input {
+padding: 10px;
+ width: 94%;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+}
+button {
+    padding: 10px 40px;
+background-color:#f7991c;
+width: 100%;
+border:none;
+font-family: Arial, sans-serif;
+line-height: 19px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+*/
+#keepSignedIn {
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+}
+.a{
+    text-decoration: none;
+    color: black;
+}

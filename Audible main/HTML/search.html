@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/audible.css">
+</head>
+
+<body>
+    <div id="matchingtitle"></div>
+
+    <script>
+        const quarString = window.location.search;
+
+        const urlParams = new URLSearchParams(quarString);
+        let searchParam = urlParams.get('book');
+        console.log(searchParam);
+        let audioURL = "http://localhost:3000/audioorpodcasts";
+
+        let ress1;
+        let b = async () => {
+            ress1 = await fetch(audioURL);
+            let books = await ress1.json();
+            let row = '';
+            for (let i = 0; i < books.length; i++) {
+                if (searchParam === books[i].title) {
+                    row = `<div style="display:flex; flex-direction:column; align-items:center; height:100vh; justify-content:center">
+                    <div style="margin: 10px;">
+                        <img src="${books[i].img}" width="200px" height="200px"/>
+                        <audio controls style="margin-top: 5px; width: 200px;"> <source src="${books[i].aud}  "/></audio>
+                    </div>`;
+                }
+            }
+            document.getElementById('matchingtitle').innerHTML = row;
+        }
+        b();
+    </script>
+    <script src="../JS/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/fiction.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../oops/jquery/jquery-3.7.1.js">
+    
+    <style>
+
+     
+        .button1
+        {
+            position: absolute;
+            top: 140%;
+            left: 57.3%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: rgb(233, 155, 9);
+            color: black;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            text-align: center;
+            font-style: italic;
+        }
+        .button2
+        {
+            position: absolute;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            top: 88%;
+            left: 64%;
+            background-color: rgb(243, 169, 31);
+            width: 200px;
+            height: 50px;
+        }
+        .button3
+        {
+            position: absolute;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: rgb(84, 95, 192);
+            width: 200px;
+            height: 50px;
+            top: 88%;
+            left: 30%;
+        }
+        *
+        {
+            box-sizing :border-box
+        }
+
+        .container .btn:hover 
+        {
+            background-color: orange;
+        }
+       
+
+        .column 
+        {
+            float: left;
+            width: 33.33%;
+            padding: 5px
+             
+        }   
+
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+   /* end */
+   figcaption {
+
+  color: black;
+  font-style: bold;
+  padding: 2px;
+  text-align: center;
+   }
+  .t
+  {
+    text-align: center;
+  }
+  .d3
+  {
+    text-align: center;
+    
+  }
+  .play1{
+    text-align: center;
+    font-size: 40px;
+  }
+
+</style>
+</head>
+<body>
+    
+    <div class="body">
+        <div class="container d-flex flex-wrap">
+                <ul class="nav me-auto">
+            <img src="../Images/logo1.png" style="height: 72px; width: 160px;" alt="">
+            </ul>
+            <ul class="nav pt-3   ">
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2" >Help </a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">|  &ensp;Sign in</a></li>
+            </ul>
+        </div>
+        <div class="container d-flex flex-wrap justify-content-start mb-4">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+                <li class="nav-item"><div class="dropdown ">
+                    <button
+                      class="dropdown "
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-mdb-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Browse <img  src="../Images/chevron-down.svg" alt="">
+                    </button>
+                   
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Fiction
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">Sci-Fi & Fantasy
+                        </a></li>
+                      <li><a class="dropdown-item" href="#">Mysteries & Thrillers
+                        </a></li>
+                      <li><a class="dropdown-item" href="#">Self-Development
+                        </a></li>
+                      <li><a class="dropdown-item" href="#">Biographies & Memoirs
+                        </a></li>
+                      <li><a class="dropdown-item" href="#">Children's Audiobooks
+                        </a></li>
+                      <li><a class="dropdown-item" href="#">All Categories
+                        </a></li>
+                      <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+    
+                    </ul>
+    
+                   
+                  </div></li>
+    
+    
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About Membership</a></li>
+              </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                <div class="container d-flex" style="border: 1px solid black;">
+              <input type="search" class="form-control" id="search" placeholder="Search for a great book" aria-label="Search" >
+              <a href=""><img src="../Images/search.svg" alt=""></a>
+            </div>
+              
+            </form>
+
+
+            
+          <div class="containerflex-wrap">
+            <a class="nav me-auto"> <img src="../Images/Memership.png" style=" height: 300px; margin-top: 80px;"></a>
+        </div>
+
+        <div class="containerflex-wrap">
+            <b class="navme"> <img src="../Images/credits.jpg"
+                    style=" height: 280px; margin-left: 150px; margin-top: 80px;"></b>
+            <button class="button2">Explore Now>  </button>
+        </div>
+
+        <div class="containerflex-wrap">
+            <c class="navme1"> <img src="../Images/Plus.jpg"
+                    style=" height: 280px; margin-left: 180px; margin-top: 80px;"></c>
+            <button class="button3">Explore Now ></button>
+
+        </div>
+ 
+
+          </div>
+
+
+
+        </div>
+         <!-- break -->
+
+
+         
+
+
+
+        <div class="container1">
+            <img src="../Images/book.jpg" alt="" style="width:100%">
+            <button class="button1">Explore thousand of titles</button>
+            <img src="../Images/phone.jpg" alt="" style="width: 100%">
+       </div>
+    
+       <p style="color: orange ;font-size: 30px; text-align: center;"> YOU MEMBERSHIP INCLUDES </p>
+       <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 50px;">The Audible Plus Catalogue</h1>
+       <h2 style="text-align: center;font-family:Arial, Helvetica, sans-serif;">Listen all you want to thousand of select titles.</h2>
+       <br><br><br><br><br>
+    <!-- end  -->
+
+
+
+    
+       <div class="row">
+            <div class="column">
+            <img src="../Images/music.jpg" alt="" style="width:100%"><br><br>
+            <figcaption> <h3> <a href="#Audibooks">Audibooks</a></h3></figcaption>
+            <p><h4 class="t">Top-rated Audibooks.</p></h4>
+            <p class="d3"><a  href="#Discover more">Discover more</a></p>
+            </div>
+           
+    
+    
+            <div class="column">
+                <img src="../Images/wifi.jpg" alt="" style="width:100%"><br><br>
+                <figcaption> <h3><a href="#Audible Orginals">Audible Orginals</h3></a></figcaption>
+                <p><h4>Exclusive audiobooks and series. </p></h4>
+                <p class="d3"><a  href="#Discover more">Discover more</a></p>
+                
+            </div>
+    
+        
+            <div class="column">
+                <img src="../Images/podcast.jpg" alt="" style="width:100%"><br><br>
+                <figcaption> <h3><a href="#Podcats">Podcats</a></h3></figcaption>
+                <p><h4>Popular English and Hindi podcast.</p></h4>
+                <p class="d3"><a  href="#Discover more">Discover more</a></p>
+                
+            </div>
+        </div>
+        <br><br>
+        <h1 style="text-align: center;">Recommed for you</h1>
+        </div>
+
+
+
+        <!-- break -->
+        <div>
+            <img src="../Images/detail.png" style="width: 101%;"    alt="">
+        </div>
+    <div class="play1">
+        <p>It's Your playlist<br>for life</p> 
+    </div>
+    <div>
+            <img src="../Images/app1.png" style="width: 90%; margin-left: 100px;"    alt="">
+        </div>
+
+   <!-- breakk -->
+
+
+<div  style="background-color: #f1f7fe; padding-left: 60px;padding-right: 60px;  ">
+   <center>
+    <footer class="pt-3" >
+      <div class="row d-flex" style="justify-content:space-evenly;">
+        <div class="col-6 col-md-2 mb-3">
+          
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">How to Listen</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Listening Apps</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Mobile Site</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Audible Suno</a></li>
+
+          </ul>
+          
+
+
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3 " >
+         
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Twitter</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learn more about Audible</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learn more about membership</a></li>
+          </ul>
+        </div>
+        
+        
+        
+  
+        <div class="col-6 col-md-2 mb-3">
+         
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          Best Sellers
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          New Releases
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          Indian Listens
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          Hindi Audiobooks
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          Free Shows & Audiobooks
+          </a></li>
+          </ul>
+        </div>
+        
+        
+        
+        
+
+        <div class="col-6 col-md-2 mb-3">
+          
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">                Mysteries & Thrillers
+
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">         Romance
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          Fiction
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          Sci-Fi & Fantasy
+          </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">          Self Development
+          </a></li>
+          </ul>
+        </div>
+        <!-- <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div> -->
+      </div>
+  
+     
+    </footer>
+     <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        
+        <ul class="list-unstyled d-flex " style="justify-content: space-around;">
+          <p>© Copyright 1997 - 2024 Audible, Inc.</p>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg>| Inc  Conditions of Use</a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg>| Privacy Notice</a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg>| Interest-Based Ads </a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg>|  Recurring Payment Terms </a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a>| | India (English) </li>
+
+          </body> </li>
+
+      </ul>
+      </div>
+  </center>
+  </div>
+    <script src="../JS/fiction.js"></script>
+  
+    
+
+</body>
+</html>
